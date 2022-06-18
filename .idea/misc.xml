@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable-v23/test.xml" value="0.2055" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable-v24/ic_personal.xml" value="0.2075" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable-v24/ic_user.xml" value="0.2075" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable-v24/ic_users.xml" value="0.2075" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable/krugli_ugli.xml" value="0.2055" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable/line_vertical.xml" value="0.24" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable/round.xml" value="0.2055" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable/rounded.xml" value="0.2055" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable/test.xml" value="0.2055" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/drawable/ugli.xml" value="0.24" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/layout/traine_item.xml" value="0.264" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/layout/trainelist_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/layout/training_item.xml" value="0.72" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/layout/training_item2.xml" value="0.23972602739726026" />
+        <entry key="..\:/Users/05mur/AndroidStudioProjects/FitnessKitTestProject/app/src/main/res/layout/traininglist_fragment.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

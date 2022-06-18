@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Fitness Kit Test Project</string>
+    <string name="app_name">FitnessKit Test-Project</string>
+    <string name="timetable">Расписание</string>
 </resources>

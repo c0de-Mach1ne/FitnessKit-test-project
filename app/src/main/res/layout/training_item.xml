@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="7dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded">
+
+        <View
+            android:id="@+id/view_verticalLine"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="#59FF00" />
+
+        <TextView
+            android:id="@+id/tv_timeStartTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_timeEndTraining"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view_verticalLine"
+            tools:text="13:45" />
+
+        <TextView
+            android:id="@+id/tv_timeEndTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/view_verticalLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_timeStartTraining"
+            tools:text="14:45" />
+
+        <TextView
+            android:id="@+id/tv_trainingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="11dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_timeStartTraining"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Йога" />
+
+        <ImageView
+            android:id="@+id/iv_users"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_timeEndTraining"
+            app:layout_constraintStart_toStartOf="@id/tv_trainingName"
+            tools:src="@drawable/ic_users" />
+
+        <TextView
+            android:id="@+id/tv_trainingParticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_users"
+            app:layout_constraintStart_toEndOf="@id/iv_users"
+            app:layout_constraintTop_toTopOf="@id/iv_users"
+            tools:text="Записано 2" />
+
+        <ImageView
+            android:id="@+id/iv_geoTag"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="48dp"
+            android:src="@drawable/ic_geo_tag"
+            app:layout_constraintBottom_toBottomOf="@id/tv_trainingParticipants"
+            app:layout_constraintStart_toEndOf="@id/tv_trainingParticipants"
+            app:layout_constraintTop_toTopOf="@id/tv_trainingParticipants" />
+
+        <TextView
+            android:id="@+id/tv_trainingPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_geoTag"
+            app:layout_constraintStart_toEndOf="@id/iv_geoTag"
+            app:layout_constraintTop_toTopOf="@id/iv_geoTag"
+            tools:text="Большой зал" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
