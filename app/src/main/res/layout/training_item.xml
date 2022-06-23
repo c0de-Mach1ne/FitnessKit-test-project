@@ -21,7 +21,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:background="#59FF00" />
+            android:background="#FF5722" />
 
         <TextView
             android:id="@+id/tv_timeStartTraining"
@@ -49,15 +49,17 @@
 
         <TextView
             android:id="@+id/tv_trainingName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="11dp"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/tv_timeStartTraining"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/constrainLayout"
+            android:ellipsize="end"
             tools:text="Йога" />
 
         <ImageView
@@ -66,40 +68,57 @@
             android:layout_height="16dp"
             app:layout_constraintBottom_toBottomOf="@id/tv_timeEndTraining"
             app:layout_constraintStart_toStartOf="@id/tv_trainingName"
-            tools:src="@drawable/ic_users" />
+            android:src="@drawable/ic_trainer"
+            android:visibility="visible"
+            />
 
         <TextView
             android:id="@+id/tv_trainingParticipants"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:textColor="@color/black"
-            android:textSize="11sp"
-            app:layout_constraintBottom_toBottomOf="@id/iv_users"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_timeEndTraining"
             app:layout_constraintStart_toEndOf="@id/iv_users"
-            app:layout_constraintTop_toTopOf="@id/iv_users"
-            tools:text="Записано 2" />
+            app:layout_constraintTop_toTopOf="@id/tv_timeEndTraining"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            tools:text="Записано 2"
+            android:ellipsize="end"
+            android:layout_marginEnd="4dp"
+            />
 
         <ImageView
             android:id="@+id/iv_geoTag"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:layout_marginStart="48dp"
             android:src="@drawable/ic_geo_tag"
-            app:layout_constraintBottom_toBottomOf="@id/tv_trainingParticipants"
-            app:layout_constraintStart_toEndOf="@id/tv_trainingParticipants"
-            app:layout_constraintTop_toTopOf="@id/tv_trainingParticipants" />
+            app:layout_constraintBottom_toBottomOf="@id/tv_timeEndTraining"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/tv_timeEndTraining" />
 
         <TextView
             android:id="@+id/tv_trainingPlace"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="@id/iv_geoTag"
             app:layout_constraintStart_toEndOf="@id/iv_geoTag"
             app:layout_constraintTop_toTopOf="@id/iv_geoTag"
-            tools:text="Большой зал" />
+            tools:text="Функциональная зона Олимпия"
+            app:layout_constraintEnd_toEndOf="@id/constrainLayout"
+            android:ellipsize="end"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintGuide_percent="0.6"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
