@@ -17,4 +17,4 @@ data class Lesson(
     val startTime: String,
     val tab: String,
     val tab_id: Int
-)
+): ListItem(TYPE_LESSON)

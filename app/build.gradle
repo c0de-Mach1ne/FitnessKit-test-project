@@ -31,10 +31,10 @@ android {
         jvmTarget = '1.8'
     }
 
-    viewBinding{
-        enabled = true
+    buildFeatures {
+        dataBinding true
+        viewBinding true
     }
-
 
 }
 
@@ -57,5 +57,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.9'
 
     implementation("com.squareup.moshi:moshi:1.13.0")
+
 
 }

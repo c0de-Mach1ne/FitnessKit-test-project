@@ -32,7 +32,6 @@ class TrainingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             }
         }
 
-
         startTime.text = lesson.startTime
         endTime.text = lesson.endTime
         trainingName.text = lesson.name
