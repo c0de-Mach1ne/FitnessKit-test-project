@@ -19,9 +19,9 @@ class TrainingAdapter(
         val layoutInflater = LayoutInflater.from(parent.context)
         return when (viewType) {
             ListItem.TYPE_DATE ->
-                DateViewHolder(DateItemBinding.inflate(layoutInflater))
+                DateViewHolder(DateItemBinding.inflate(layoutInflater, parent, false))
             else ->
-                LessonViewHolder(TrainingItemBinding.inflate(layoutInflater))
+                LessonViewHolder(TrainingItemBinding.inflate(layoutInflater, parent, false))
         }
     }
 
